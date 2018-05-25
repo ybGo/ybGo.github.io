@@ -78,6 +78,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-    repository: https://github.com/ybGo/ybGo.github.io.git
-    branch: master
+type: git
+repository: git@github.com:ybGo/ybGo.github.io.git
+branch: master
