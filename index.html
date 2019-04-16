@@ -2,19 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>\(≧▽≦)/鸡冻</title>
+    <title>一只叫布丁的汪</title>
     <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <style>
+        body {
+            background: pink;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <p>{{ message }}</p>
+    <div style="text-align: center;margin-top:200px;">
+        <img v-for="i in imgurls" :src="i.src" style="width: 20%;height: 20%;" alt="想吃花花"></img>
+
+    </div>
 </div>
 
 <script>
     new Vue({
         el: '#app',
         data: {
-            message: '郁闷了1年，终于绑上了'
+            message: '郁闷了1年，终于绑上了',
+            imgurls: [
+                {src:'imgs/bd1.jpeg'},
+                {src:'imgs/bd2.jpeg'},
+                {src:'imgs/bd3.jpeg'},
+                {src:'imgs/bd4.jpeg'},
+                {src:'imgs/bd5.jpeg'},
+            ]
         }
     })
 </script>
